@@ -16,34 +16,4 @@ document.addEventListener("DOMContentLoaded", function () {
     .catch((error) =>
       console.log("Erreur lors du chargement de la vidéo :", error)
     );
-
-  // Fonction de traduction
-  window.translate = function (lang) {
-    const translations = {
-      fr: {
-        title: "Bienvenue sur IamTrendingTV",
-        description: "Découvrez les vidéos les plus tendances du moment !",
-        subscribe: "S'abonner",
-        "latest-video": "Dernière vidéo",
-        "footer-text": "&copy; 2025 IamTrendingTV - Tous droits réservés",
-      },
-      en: {
-        title: "Welcome to IamTrendingTV",
-        description: "Discover the most trending videos of the moment!",
-        subscribe: "Subscribe",
-        "latest-video": "Latest Video",
-        "footer-text": "&copy; 2025 IamTrendingTV - All rights reserved",
-      },
-    };
-
-    document.getElementById("title").innerHTML = translations[lang]["title"];
-    document.getElementById("description").innerHTML =
-      translations[lang]["description"];
-    document.getElementById("subscribe").innerHTML =
-      translations[lang]["subscribe"];
-    document.getElementById("latest-video").innerHTML =
-      translations[lang]["latest-video"];
-    document.getElementById("footer-text").innerHTML =
-      translations[lang]["footer-text"];
-  };
 });
