@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IamTrendingTV - Vidéos Tendances</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <img src="assets/logo.png" alt="IamTrendingTV Logo" class="logo" />
+      <h1 id="title">Bienvenue sur IamTrendingTV</h1>
+      <p id="description">
+        Découvrez les vidéos les plus tendances du moment !
+      </p>
+      <a
+        href="https://www.youtube.com/@IamTrendingTV"
+        target="_blank"
+        class="btn btn-subscribe"
+        id="subscribe"
+        >S'abonner</a
+      >
+
+      <div class="language-switcher mt-3">
+        <button onclick="translate('fr')">🇫🇷 Français</button>
+        <button onclick="translate('en')">🇬🇧 English</button>
+      </div>
+    </header>
+
+    <section class="video-container">
+      <h2 class="text-center" id="latest-video">Dernière vidéo</h2>
+      <div class="ratio ratio-16x9">
+        <iframe
+          id="latestVideo"
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="contact text-center p-4">
+      <h2>Contactez-nous</h2>
+      <p>Vous avez une question ou une suggestion ? Écrivez-nous !</p>
+      <a href="mailto:tshibzack@gmail.com" class="btn btn-contact"
+        >📩 Envoyer un email</a
+      >
+    </section>
+
+    <footer class="text-center p-3">
+      <p id="footer-text">&copy; 2025 IamTrendingTV - Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
